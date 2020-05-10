@@ -67,7 +67,7 @@
         ["xpath=//form[@id='loginForm']/input[5]", "xpath:idRelative"],
         ["xpath=//input[5]", "xpath:position"]
       ],
-      "value": "Password1!"
+      "value": "password"
     }, {
       "id": "239a9275-5553-4cd2-8369-31b486777d10",
       "comment": "",
