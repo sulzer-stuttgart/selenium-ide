@@ -1,0 +1,197 @@
+{
+  "id": "6218f0ba-a2a4-42c3-a1a0-7d32a43e0104",
+  "version": "2.0",
+  "name": "Selenium IDE Demo",
+  "url": "https://preview-login.porsche.com/auth/de/de_DE",
+  "tests": [{
+    "id": "ea3eec02-a4b5-4439-882c-6d9f6a17e2d0",
+    "name": "Login",
+    "commands": [{
+      "id": "f7f35c21-dad3-45cc-8949-7eb99f1a3966",
+      "comment": "",
+      "command": "open",
+      "target": "https://preview-login.porsche.com/auth/de/de_DE",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cab2af9a-ce39-4025-b377-336e986a2523",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1680x975",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8ee02163-cb36-4dd7-8cda-d92d05a99192",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-tns-c115-0 > .input__field",
+      "targets": [
+        ["css=.ng-tns-c115-0 > .input__field", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": "mustafa@sulzer.de"
+    }, {
+      "id": "8f7b28c8-2a5c-4bf2-a5de-f650484d9e13",
+      "comment": "",
+      "command": "type",
+      "target": "css=.ng-tns-c115-1 > .input__field",
+      "targets": [
+        ["css=.ng-tns-c115-1 > .input__field", "css:finder"],
+        ["xpath=//input[@type='password']", "xpath:attributes"],
+        ["xpath=//pidx-form-input[2]/label/input", "xpath:position"]
+      ],
+      "value": "Password1!"
+    }, {
+      "id": "5e7f555a-8b26-469d-a4b4-e1108a90c04b",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/app-layout/div/pida-login/div/div/div/form/div/pidx-form-input[1]/label/input",
+      "targets": [
+        ["name=username", "name"],
+        ["css=input:nth-child(4)", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "mustafa@sulzer.de"
+    }, {
+      "id": "4a9ed45b-ee25-498b-b51d-b5a3e7e5a68c",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/app-layout/div/pida-login/div/div/div/form/div/pidx-form-input[2]/label/input",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/input[5]", "xpath:idRelative"],
+        ["xpath=//input[5]", "xpath:position"]
+      ],
+      "value": "Password1!"
+    }, {
+      "id": "239a9275-5553-4cd2-8369-31b486777d10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-primary__label",
+      "targets": [
+        ["css=.button-primary__label", "css:finder"],
+        ["xpath=//button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b5253ec0-c441-4042-b019-424454733756",
+    "name": "Inbox",
+    "commands": [{
+      "id": "e3e86804-9224-4104-8aa0-344b4aa4898c",
+      "comment": "",
+      "command": "run",
+      "target": "Login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "678f3a17-fb54-46a5-899a-c9b77925a00b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navigation-topbar-desktop__link--messages > .navigation-topbar-desktop__link-icon",
+      "targets": [
+        ["css=.navigation-topbar-desktop__link--messages > .navigation-topbar-desktop__link-icon", "css:finder"],
+        ["xpath=//div[2]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "002282b1-e3e6-43f4-b425-c310beae2aaf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button-regular--highlight .button-regular__label",
+      "targets": [
+        ["css=.button-regular--highlight .button-regular__label", "css:finder"],
+        ["xpath=//div[@id='menu']/div/app-button-regular/button/span/span", "xpath:idRelative"],
+        ["xpath=//button/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "658e0025-5e25-415a-b4a9-05d70cac9210",
+      "comment": "",
+      "command": "click",
+      "target": "id=subjectSelect",
+      "targets": [
+        ["id=subjectSelect", "id"],
+        ["name=subjectSelect", "name"],
+        ["css=#subjectSelect", "css:finder"],
+        ["xpath=//select[@id='subjectSelect']", "xpath:attributes"],
+        ["xpath=//div[@id='message-inbox']/app-compose-message/div/div/div/form/div[2]/app-compose-header/div[2]/div/label/select", "xpath:idRelative"],
+        ["xpath=//div[2]/div/label/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aa6a0d8-fc96-4a25-a574-51e6f3cc0b0b",
+      "comment": "",
+      "command": "select",
+      "target": "id=subjectSelect",
+      "targets": [],
+      "value": "label=My Porsche"
+    }, {
+      "id": "08fed63a-e06f-4837-bf07-3039bd72fcc1",
+      "comment": "",
+      "command": "click",
+      "target": "id=body",
+      "targets": [
+        ["id=body", "id"],
+        ["name=body", "name"],
+        ["css=#body", "css:finder"],
+        ["xpath=//textarea[@id='body']", "xpath:attributes"],
+        ["xpath=//div[@id='message-inbox']/app-compose-message/div/div/div/form/div[2]/div/div/p-textarea-wrapper/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a5c16f1e-0995-4795-ad82-27c06566d26e",
+      "comment": "",
+      "command": "type",
+      "target": "id=body",
+      "targets": [
+        ["id=body", "id"],
+        ["name=body", "name"],
+        ["css=#body", "css:finder"],
+        ["xpath=//textarea[@id='body']", "xpath:attributes"],
+        ["xpath=//div[@id='message-inbox']/app-compose-message/div/div/div/form/div[2]/div/div/p-textarea-wrapper/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "ea09becb-acdd-4dbd-8d0a-edd77a0fd946",
+      "comment": "",
+      "command": "click",
+      "target": "css=.flex .button-regular--highlight",
+      "targets": [
+        ["css=.flex .button-regular--highlight", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='message-inbox']/app-compose-message/div/div/div/form/div[3]/div/app-button-regular/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/app-button-regular/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Senden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c839ec3b-03f9-4d7a-9314-231edc67fe89",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-close__icon",
+      "targets": [
+        ["css=.icon-close__icon", "css:finder"],
+        ["xpath=//div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d807bcee-70fe-4616-b5f5-aeb569e142be",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ea3eec02-a4b5-4439-882c-6d9f6a17e2d0"]
+  }],
+  "urls": ["https://preview-login.porsche.com/", "https://preview-login.porsche.com/auth/de/de_DE"],
+  "plugins": []
+}

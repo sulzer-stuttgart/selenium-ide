@@ -1,0 +1,24 @@
+{
+  "name": "selenium-ide",
+  "version": "1.0.0",
+  "description": "Selenium IDE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sulzer-stuttgart/selenium-ide.git"
+  },
+  "author": "Mustafa Masetic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sulzer-stuttgart/selenium-ide/issues"
+  },
+  "homepage": "https://github.com/sulzer-stuttgart/selenium-ide#readme",
+  "devDependencies": {
+    "chromedriver": "^81.0.0",
+    "selenium-side-runner": "^3.17.0",
+    "selenium-standalone": "^6.17.0"
+  }
+}
