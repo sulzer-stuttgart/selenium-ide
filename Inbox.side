@@ -41,7 +41,7 @@
         ["xpath=//input[@type='password']", "xpath:attributes"],
         ["xpath=//pidx-form-input[2]/label/input", "xpath:position"]
       ],
-      "value": "Password1!"
+      "value": "password"
     }, {
       "id": "5e7f555a-8b26-469d-a4b4-e1108a90c04b",
       "comment": "",
